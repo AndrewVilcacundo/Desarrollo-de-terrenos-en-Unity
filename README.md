@@ -19,6 +19,31 @@ El objetivo fue diseñar un **terreno**, colocar **cubos**, y personalizar la es
 - Se les aplicaron **materiales personalizados** para color y variedad.
 - Algunos se generaron automáticamente con un **script en C#** que coloca cubos en posiciones aleatorias.
 
+- using UnityEngine;
+
+public class CubesGenerator : MonoBehaviour
+{
+    public GameObject cubePrefab; // Asigna un Cube prefab desde Unity
+    public int numberOfCubes = 10;
+    public float terrainSize = 100f; // tamaño aproximado del terreno
+
+    void Start()
+    {
+        for (int i = 0; i < numberOfCubes; i++)
+        {
+            Vector3 position = new Vector3(
+                Random.Range(0, terrainSize), 
+                0, 
+                Random.Range(0, terrainSize)
+            );
+
+            // Crea un cubo en la posición
+            Instantiate(cubePrefab, position, Quaternion.identity);
+        }
+    }
+}
+
+
 ### Rocas
 - Se agregaron rocas usando **objetos 3D deformados (cubes y spheres)** con materiales grises, y también se pueden usar prefabs de la Asset Store.
 - Se distribuyeron en puntos estratégicos como cerca del río o en colinas para dar realismo.
