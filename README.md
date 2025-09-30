@@ -19,7 +19,8 @@ El objetivo fue diseñar un **terreno**, colocar **cubos**, y personalizar la es
 - Se les aplicaron **materiales personalizados** para color y variedad.
 - Algunos se generaron automáticamente con un **script en C#** que coloca cubos en posiciones aleatorias.
 
-- using UnityEngine;
+
+using UnityEngine;
 
 public class CubesGenerator : MonoBehaviour
 {
