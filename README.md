@@ -60,9 +60,6 @@ public class CubesGenerator : MonoBehaviour
 
 ---
 
-## Cómo ejecutar el proyecto
+## Link del video
 
-1. Clona este repositorio en tu computadora:
-
-```bash
-git clone https://github.com/TUUSUARIO/TUREPO.git
+https://youtu.be/W2ElQ1IAFiM
